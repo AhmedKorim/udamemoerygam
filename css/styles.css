@@ -1,0 +1,698 @@
+/*nomalize css*/
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/*nomalize css*/
+/*project frame work*/
+/*container*/
+main {
+  display: none;
+}
+
+.container {
+  margin: auto;
+  padding: 0 15px;
+}
+@media (min-width: 320px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 720px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (min-width: 920px) {
+  .container {
+    width: 920px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+:root {
+  font-size: 14px;
+}
+@media (max-width: 400px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+/*container*/
+/*row*/
+.row {
+  display: flex;
+  margin: 0 -15px;
+  align-items: center;
+  align-content: center;
+}
+
+/*row*/
+/*helper classes*/
+.AK-btn {
+  position: relative;
+  width: 50%;
+  margin: auto;
+}
+.AK-btn button, .AK-btn input {
+  box-shadow: -2px 7px 20px 2px rgba(46, 61, 73, 0.35);
+  border-radius: 20px;
+  color: #FFFFFF;
+  outline: none;
+  border: none;
+  display: block;
+  font-size: 1.5rem;
+  padding: .5rem .25rem;
+  width: 100%;
+  transition: all .6s ease-in-out;
+  background-color: #2e3d49;
+  box-shadow: 1px 1px 5px rgba(46, 61, 73, 0.4);
+}
+.AK-btn button[type="text"], .AK-btn input[type="text"] {
+  text-align: center;
+}
+.AK-btn button, .AK-btn input[type="submit"] {
+  cursor: pointer;
+}
+.AK-btn button:hover, .AK-btn button:focus, .AK-btn button:active, .AK-btn input[type="submit"]:hover, .AK-btn input[type="submit"]:focus, .AK-btn input[type="submit"]:active {
+  box-shadow: -2px 7px 20px 2px rgba(255, 255, 255, 0.05);
+  background-color: #e3e3e3;
+  color: #2e3d49;
+}
+
+.card-home .deck, #gamestarting .wraper, #result .modal-content, .score-panel .wraper, #result .modal-body {
+  width: 100%;
+  margin: auto;
+}
+@media (min-width: 320px) {
+  .card-home .deck, #gamestarting .wraper, #result .modal-content, .score-panel .wraper, #result .modal-body {
+    width: 100%;
+  }
+}
+@media (min-width: 520px) {
+  .card-home .deck, #gamestarting .wraper, #result .modal-content, .score-panel .wraper, #result .modal-body {
+    width: 80%;
+  }
+}
+@media (min-width: 680px) {
+  .card-home .deck, #gamestarting .wraper, #result .modal-content, .score-panel .wraper, #result .modal-body {
+    width: 70%;
+  }
+}
+@media (min-width: 950px) {
+  .card-home .deck, #gamestarting .wraper, #result .modal-content, .score-panel .wraper, #result .modal-body {
+    width: 60%;
+  }
+}
+@media (min-width: 1200px) {
+  .card-home .deck, #gamestarting .wraper, #result .modal-content, .score-panel .wraper, #result .modal-body {
+    width: 50%;
+  }
+}
+
+.stars {
+  padding: 0;
+  margin-right: auto;
+  display: block;
+  list-style: none;
+  flex-wrap: nowrap;
+}
+.stars li {
+  color: gold;
+  display: inline-block;
+}
+
+.card-home .deck li.card, #gamestarting .callToAction .chose .chose-item {
+  background: #2e3d49;
+  color: #2e3d49;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+.card-home .deck, #gamestarting .wraper, #result .modal-content {
+  background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+  border-radius: 10px;
+  box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+  padding: 2%;
+}
+
+.score-panel .wraper, #result .modal-body {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  display: flex;
+}
+
+.text-center, header h1 {
+  text-align: center;
+}
+
+.img-resposive {
+  max-width: 90%;
+}
+
+/*helper classes*/
+/*mixins*/
+/*mixins*/
+/*project frame work*/
+/*project */
+/*global*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  background-image: url("../img/geometry2.png"), linear-gradient(45deg, rgba(46, 61, 73, 0.6), rgba(46, 61, 73, 0.5));
+  background-blend-mode: overlay;
+  height: 100%;
+  overflow: hidden;
+}
+
+/*global*/
+header .col {
+  width: 100%;
+}
+
+.score-panel .col {
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 400px) {
+  .score-panel .col {
+    font-size: .7rem;
+  }
+}
+.score-panel .col:first-of-type {
+  width: 50%;
+}
+.score-panel .col:nth-of-type(2) {
+  width: 50%;
+}
+.score-panel .restart {
+  overflow: hidden;
+  margin-left: 3rem;
+  cursor: pointer;
+}
+.score-panel .moves {
+  margin: auto;
+}
+
+.card-home {
+  padding-bottom: 50px;
+}
+.card-home .col {
+  width: 50%;
+}
+.card-home .deck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  list-style: none;
+}
+.card-home .deck li.card {
+  font-size: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  width: 20%;
+  margin: 1.6666666667%;
+}
+.card-home .deck li.card .img-resposive {
+  visibility: hidden;
+}
+.card-home .deck li.open {
+  transform: rotateY(0);
+  background: #ffffff;
+  cursor: default;
+}
+.card-home .deck li.show {
+  font-size: 33px;
+}
+.card-home .deck li.show .img-resposive {
+  visibility: visible;
+}
+.card-home .deck li.match {
+  cursor: default;
+  background: #02ccba;
+  font-size: 33px;
+}
+.card-home .deck li.wrong {
+  background: #e5534d;
+}
+
+/*modal*/
+/*game starting*/
+#gamestarting {
+  text-align: center;
+}
+#gamestarting .row {
+  justify-content: center;
+  align-items: center;
+}
+#gamestarting p {
+  text-align: center;
+  font-size: 1.4rem;
+}
+#gamestarting .col {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#gamestarting .wraper {
+  position: relative;
+  padding: 2rem 1rem;
+}
+#gamestarting .loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow: hidden;
+  z-index: -1;
+}
+#gamestarting .loading img {
+  display: block;
+  width: 100%;
+}
+#gamestarting .callToAction {
+  margin: auto;
+}
+@media (min-width: 450px) {
+  #gamestarting .callToAction {
+    width: 70%;
+  }
+}
+#gamestarting .callToAction .chose {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+#gamestarting .callToAction .chose .chose-item {
+  position: relative;
+  width: 40%;
+  margin: 5% 5%;
+  padding: 5%;
+  display: block;
+}
+#gamestarting .callToAction .chose .chose-item.active .chose-icon {
+  opacity: 1;
+}
+#gamestarting .callToAction .chose .chose-item .chose-icon {
+  transition: all .3s ease-in-out;
+  position: absolute;
+  top: .1rem;
+  left: .3rem;
+  font-size: 1.5rem;
+  opacity: 0;
+  color: #00b300;
+}
+
+#result {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#result.active {
+  display: block;
+}
+#result .col {
+  width: 100%;
+}
+#result .modal {
+  transition: all 1s ease-in-out;
+  transform: translate(2000px);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+#result p {
+  font-size: 1.5rem;
+}
+#result ul {
+  font-size: 1.8rem;
+}
+#result .modal-content {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  width: 100%;
+}
+
+/*game starting*/
+/*keyframs*/
+/*project */
+
+/*# sourceMappingURL=styles.css.map */
