@@ -2,7 +2,7 @@
 let lock = 0, star;
 const featch = (function () {
     async function getData() {
-        const data = await fetch("../data.json");
+        const data = await fetch("https://ahmedkorim.github.io/udamemoerygame/data.json");
         const list = await data.json();
         return list
     }
