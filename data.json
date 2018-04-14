@@ -56,7 +56,7 @@
   "pakemonGo": [
     "<li class=\"card\"><img class=\"img-resposive abra\" src=\"img/pakemonGo/abra.svg\"></li>",
     "<li class=\"card\"><img class=\"img-resposive pikachu-2\" src=\"img/pakemonGo/pikachu-2.svg\"></li>",
-    "<li class=\"card\"><img class=\"img-resposive Bullbasaur\" src=\"img/pakemonGo/Bullbasaur.svg\"></li>",
+    "<li class=\"card\"><img class=\"img-resposive Bullbasaur\" src=\"img/pakemonGo/bullbasaur.svg\"></li>",
     "<li class=\"card\"><img class=\"img-resposive Snorlax\" src=\"img/pakemonGo/snorlax.svg\"></li>",
     "<li class=\"card\"><img class=\"img-resposive mankey\" src=\"img/pakemonGo/mankey.svg\"></li>",
     "<li class=\"card\"><img class=\"img-resposive mew\" src=\"img/pakemonGo/mew.svg\"></li>",
