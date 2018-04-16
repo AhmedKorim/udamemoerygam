@@ -1,6 +1,6 @@
-#memory game project
+# memory game project
 
-##project overview
+## project overview
 
 A memory game and the  player can chose from four styles of the game card
 using fetch api the gap the desired data from `.json` file.
@@ -9,7 +9,8 @@ data is down and  using event delegation the clicked items save on an array whic
 cleared after calling a function to run the test this enable faster gaming  expirince 
 as player can click all the cards once _if it is possible_ and only the matched items will
 pass the test a player have **8 tries** before the rat starts gaging a chaise to know the cards          
-###tabel of content
+
+### content
 
 * [html](#1-html)
 * [css](#2-css)
