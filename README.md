@@ -40,6 +40,8 @@ and to add new features
 ### 3.json
 there is two`.json` one for relative url and another for absolute urls
 ### 5.bugs
+~~starts rate has now space in bettwen~~ __fixed__
+`star.innerHTML = "<i class=\"fa fa-star\"></i>";` added spaces
 if the player clicked a card and reset the level the game tries to match
 
 ### 6.todo
