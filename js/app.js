@@ -126,7 +126,7 @@ function creatProfile(playerName, gameType, cards) {
                 if (this.moves / 9 > 1 && this.curentRate <= 8) {
                     this.curentRate++;
                     star = document.createElement("li");
-                    star.innerHTML = "<i class=\"fa fa-star\"></i>";
+                    star.innerHTML = " <i class=\"fa fa-star\"></i> ";
                     document.querySelector("ul").appendChild(star)
                 }
             }
