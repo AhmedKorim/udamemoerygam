@@ -17,7 +17,7 @@ pass the test a player have **8 tries** before the rat starts gaging a chaise to
 * [javaScript](#3-js)
 * [json](#4-json)
 * [known buggs](#5-bugs)
-* [toDos](#6-todo)
+* [toDos](#6x-todo)
 * [credits](#7-credits)
 #### 1. html
 
@@ -50,7 +50,7 @@ there is two`.json` one for relative url and another for absolute urls
   `star.innerHTML = "<i class=\"fa fa-star\"></i>";` added spaces
 
 -if the player clicked a card and reset the level the game tries to match
-#### 6. todo
+#### 6x. todo
 -fixing bugs
 
 -add local storage support
