@@ -20,6 +20,7 @@
 * [credits](#7-credits)
 
 ### 1.html
+
 using font-awsome for icons ,googlefonts and animate.css
 
     <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
@@ -30,21 +31,28 @@ and chose the game theme it is removed from the dom after fetching the `.json` f
 
 the game starts and can be restarted,after the player manages to match all cards 
 a panel appears with  the game rate
+
 ### 2.css
+
 the game css is generated with **sass** 
 
 ### 3.js
+
 Mostly es6 expect `async` and `await` for es7 with fetch api
 i trie to use a module pattern but the code got longer but it easier to modify,maintain 
-and to add new features 
+and to add new features
+
 ### 3.json
+
 there is two`.json` one for relative url and another for absolute urls
+
 ### 5.bugs
-~~starts rate has now space in bettwen~~ __fixed__
 
-`star.innerHTML = "<i class=\"fa fa-star\"></i>";` added spaces
+-~~starts rate has now space in bettwen~~ __fixed__
 
-if the player clicked a card and reset the level the game tries to match
+              `star.innerHTML = "<i class=\"fa fa-star\"></i>";` added spaces
+
+-if the player clicked a card and reset the level the game tries to match
 
 ### 6.todo
 -fixing bugs
@@ -52,6 +60,7 @@ if the player clicked a card and reset the level the game tries to match
 -add local storage support
 
 ## 7.credits
+
  -[fontawesome](https://fontawesome.com/)
    
  -[animate.css](https://daneden.github.io/animate.css/)
