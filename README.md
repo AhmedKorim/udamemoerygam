@@ -50,7 +50,7 @@ there is two`.json` one for relative url and another for absolute urls
 
 -~~starts rate has now space in bettwen~~ __fixed__
 
-              `star.innerHTML = "<i class=\"fa fa-star\"></i>";` added spaces
+  `star.innerHTML = "<i class=\"fa fa-star\"></i>";` added spaces
 
 -if the player clicked a card and reset the level the game tries to match
 
