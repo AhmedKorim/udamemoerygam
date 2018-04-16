@@ -1,0 +1,403 @@
+/*nomalize css*/
+@import "normaliz";
+/*nomalize css*/
+/*project frame work*/
+/*container*/
+main {
+  display: none;
+}
+
+.container {
+  margin: auto;
+  padding: 0 15px;
+  @media (min-width: 320px) {
+    width: 100%;
+
+  }
+  @media (min-width: 720px) {
+    width: 720px;
+
+  }
+  @media (min-width: 920px) {
+    width: 920px;
+
+  }
+  @media (min-width: 1200px) {
+    width: 1200px;
+
+  }
+
+}
+
+:root {
+  font-size: 14px;
+  @media (max-width: 400px) {
+    font-size: 12px;
+  }
+}
+
+/*container*/
+/*row*/
+.row {
+  display: flex;
+  margin: 0 -15px;
+  align-items: center;
+  align-content: center;
+}
+
+/*row*/
+/*helper classes*/
+.AK-btn {
+  position: relative;
+  width: 50%;
+  margin: auto;
+
+button,input {
+
+    box-shadow: -2px 7px 20px 2px rgba(46, 61, 73, 0.35);
+    border-radius: 20px;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+    display: block;
+    font-size: 1.5rem;
+    padding: .5rem .25rem;
+    width: 100%;
+    transition: all .6s ease-in-out;
+    background-color: #2e3d49;
+    box-shadow: 1px 1px 5px transparentize(#2e3d49, .6);
+    & {
+      &[type="text"] {
+        text-align: center;
+      }
+
+    }
+
+
+  }
+  button,input[type="submit"] {
+    cursor: pointer;
+    &:hover, &:focus, &:active {
+      box-shadow: -2px 7px 20px 2px transparentize(#FFF, .95);
+
+      background-color: #e3e3e3;
+      color: #2e3d49;
+    }
+  }
+
+}
+
+%responsiveSize {
+  width: 100%;
+  margin: auto;
+  @media (min-width: 320px) {
+    width: 100%;
+
+  }
+  @media (min-width: 520px) {
+    width: 80%;
+
+  }
+  @media (min-width: 680px) {
+    width: 70%;
+
+  }
+  @media (min-width: 950px) {
+    width: 60%;
+
+  }
+  @media (min-width: 1200px) {
+    width: 50%;
+
+  }
+}
+
+.stars {
+  padding: 0;
+  margin-right: auto;
+  display: block;
+  list-style: none;
+  flex-wrap: nowrap;
+  li {
+    color: gold;
+    display: inline-block;
+  }
+}
+
+%card {
+  background: #2e3d49;
+  color: #2e3d49;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+%deck {
+  background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+  border-radius: 10px;
+  box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+  padding: 2%;
+  @extend %responsiveSize
+}
+
+%wraper {
+  justify-content: center;
+  align-items: center;
+  @extend %responsiveSize;
+  margin: auto;
+  display: flex;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.img-resposive {
+  max-width: 90%;
+}
+
+/*helper classes*/
+/*mixins*/
+
+/*mixins*/
+/*project frame work*/
+/*project */
+/*global*/
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+
+  font-family: Arial;
+  background-image: url("../img/geometry2.png"), linear-gradient(45deg, rgba(46, 61, 73, .6), rgba(46, 61, 73, .5));
+  background-blend-mode: overlay;
+  height: 100%;
+  overflow: hidden;
+}
+
+/*global*/
+
+header {
+
+  .col {
+    width: 100%;
+  }
+  h1 {
+    @extend .text-center;
+  }
+}
+
+.score-panel {
+  .wraper {
+    @extend %wraper;
+  }
+  .col {
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 400px) {
+      font-size: .7rem;
+    }
+    & {
+      &:first-of-type {
+        width: 50%;
+      }
+      &:nth-of-type(2) {
+        width: 50%;
+
+      }
+    }
+
+  }
+
+  .restart {
+    overflow: hidden;
+    margin-left: 3rem;
+    cursor: pointer;
+  }
+  .moves {
+    margin: auto;
+
+  }
+
+}
+
+.card-home {
+  padding-bottom: 50px;
+  .col {
+    width: 50%;
+  }
+  .deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    @extend %deck;
+    list-style: none;
+
+    li {
+      &.card {
+        @extend %card;
+        font-size: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+        width: 20%;
+        margin: (20%/12);
+        .img-resposive {
+          visibility: hidden;
+        }
+      }
+      &.open {
+        transform: rotateY(0);
+        background: #ffffff;
+        cursor: default;
+      }
+      &.show {
+        .img-resposive {
+          visibility: visible;
+        }
+        font-size: 33px;
+      }
+      &.match {
+        cursor: default;
+        background: #02ccba;
+        font-size: 33px;
+      }
+      &.wrong {
+        background: #e5534d;
+      }
+
+    }
+  }
+}
+
+/*modal*/
+/*game starting*/
+#gamestarting {
+  text-align: center;
+  .row {
+    justify-content: center;
+    align-items: center
+  }
+  p {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .col {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .wraper {
+    position: relative;
+    @extend %deck;
+    padding: 2rem 1rem;
+
+  }
+  .loading {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow: hidden;
+    z-index: -1;
+    img {
+      display: block;
+      width: 100%;
+    }
+
+  }
+  .callToAction {
+    @media (min-width: 450px) {
+      width: 70%;
+    }
+    margin: auto;
+    .chose {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      margin: auto;
+      .chose-item {
+        position: relative;
+        width: 40%;
+        margin: 5% 5%;
+        @extend %card;
+        padding: 5%;
+        display: block;
+        &.active {
+          .chose-icon {
+            opacity: 1;
+          }
+        }
+        .chose-icon {
+          transition: all .3s ease-in-out;
+          position: absolute;
+          top: .1rem;
+          left: .3rem;
+          font-size: 1.5rem;
+          opacity: 0;
+          color: lighten(green, 10);
+        }
+      }
+    }
+  }
+}
+
+#result {
+  overflow: hidden;
+  background-color: transparentize(black, .3);
+  height: 100vh;
+  width: 100%;
+  &.active {
+    display: block;
+  }
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  .col {
+    width: 100%;
+  }
+  .modal {
+    transition: all 1s ease-in-out;
+    transform: translate(2000px);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+  }
+  .modal-body {
+    @extend %wraper;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  ul {
+    font-size: 1.8rem;
+  }
+  .modal-content {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    @extend %deck;
+    width: 100%;
+  }
+}
+
+/*game starting*/
+/*keyframs*/
+
+/*project */
