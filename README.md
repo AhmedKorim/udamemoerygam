@@ -14,9 +14,10 @@
 * [html](#1-html)
 * [css](#2-css)
 * [javaScript](#3-js)
-* [known buggs](#4-bugs)
-* [toDos](#5-todo)
-* [credits](#5-credits)
+* [json](#4-json)
+* [known buggs](#5-bugs)
+* [toDos](#6-todo)
+* [credits](#7-credits)
 
 ### 1.html
 using font-awsome for icons ,googlefonts and animate.css
@@ -36,16 +37,17 @@ the game css is generated with **sass**
 Mostly es6 expect `async` and `await` for es7 with fetch api
 i trie to use a module pattern but the code got longer but it easier to modify,maintain 
 and to add new features 
-
-### 4.bugs
+### 3.json
+there is two`.json` one for relative url and another for absolute urls
+### 5.bugs
 if the player clicked a card and reset the level the game tries to match
 
-### 5.todo
+### 6.todo
 -fixing bugs
 
 -add local storage support
 
-## 5.credits
+## 7.credits
  -[fontawesome](https://fontawesome.com/)
    
  -[animate.css](https://daneden.github.io/animate.css/)
