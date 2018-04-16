@@ -3,7 +3,7 @@
 ## project overview
 
 A memory game and the  player can chose from four styles of the game card
-using fetch api the gap the desired data from `.json` file.
+using fetch api to grap the desired data from `.json` file.
 an object is created for containing all player data including the chosed theme html
 data is down and  using event delegation the clicked items save on an array which get 
 cleared after calling a function to run the test this enable faster gaming  expirince 
